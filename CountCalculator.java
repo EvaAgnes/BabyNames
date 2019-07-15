@@ -1,3 +1,5 @@
+ 
+
 
 /**
  * Write a description of Numbers here.
@@ -10,7 +12,7 @@ import edu.duke.*;
 import org.apache.commons.csv.*;
 import java.io.*;
 
-public class NumberCalculator {
+public class CountCalculator {
 
     public void totalBirths(FileResource fr){
         int totalBirths = 0;

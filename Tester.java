@@ -12,13 +12,13 @@ import java.io.*;
 
 public class Tester {
     
-    NumberCalculator numberCalculator;
+    CountCalculator countCalculator;
     NamePrinter namePrinter; 
     RankCalculator rankCalculator;
     int totalNumberOfSucceededTests;
     
     Tester() {
-        numberCalculator = new NumberCalculator();
+        countCalculator = new CountCalculator();
         namePrinter = new NamePrinter();
         rankCalculator = new RankCalculator();
         totalNumberOfSucceededTests = 0;
@@ -42,7 +42,7 @@ public class Tester {
         int inputYear = 1905;
         
         FileResource fr = new FileResource("us_babynames/yob"+inputYear+".csv");
-        int answer = numberCalculator.numberNamesGender(fr, inputGender);
+        int answer = countCalculator.numberNamesGender(fr, inputGender);
         if (answer == 1421){
             totalNumberOfSucceededTests += 1;
         }

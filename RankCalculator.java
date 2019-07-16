@@ -1,9 +1,10 @@
 
 /**
- * Write a description of RankCalculator here.
+ * Gets rank based on given input.
+ * Requires year, name and/or gender.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @Eva
+ * @Version 2, July 2019
  */
 
 import edu.duke.*;
@@ -18,6 +19,11 @@ public class RankCalculator {
         countCalculator = new CountCalculator();
     }
 
+    /**
+    * Calculates rank given a name, gender, and year.
+    * Requires file, name, and gender.
+    * @return rank.
+    */
     public int getRank(FileResource fr, String name, String gender){
         int rankStart = 0;
         int rankNameInput = 0;
@@ -42,12 +48,22 @@ public class RankCalculator {
         return -1;
     }
 
+    /**
+    * Tests getRank().
+    * Requires name, gender, year.
+    * @return rank.
+    */
     public int rank(String name, String gender, int year){
         FileResource fr = new FileResource("us_babynames/yob"+year+".csv");
         int answer = getRank(fr, name, gender);
         return answer;
     }
 
+    /**
+    * Calculates highest rank over all files, given a name and gender.
+    * Requires name and gender.
+    * @return highest rank.
+    */
     public int yearOfHighestRank(String name, String gender){
         int currentRank = 0;
         int highestRank = 0;
@@ -96,6 +112,11 @@ public class RankCalculator {
         return outputHighestFile;
     }
 
+    /**
+    * Calculates average rank over all files, given a name and gender.
+    * Requires name and gender.
+    * @return average rank.
+    */
     public double getAverageRank(String name, String gender){
         int currentRank = 0;
         int totalRank = 0;
@@ -120,6 +141,11 @@ public class RankCalculator {
         return averageRank;
         }
 
+    /**
+    * Calculates total birhts that are ranked higher, given a name, gender, and year.
+    * Requires name, gender, year.
+    * @return total births ranked higher.
+    */
     public int getTotalBirthsRankedHigher(String name, String gender, int year){
         int rankStart = 0;
         int nameInputRank = 0;

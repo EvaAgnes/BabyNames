@@ -1,11 +1,10 @@
- 
-
 
 /**
- * Write a description of Numbers here.
+ * Calculates number of births, total names, and names per gender.
+ * @return number 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Eva
+ * @Version 2, July 2019
  */
 
 import edu.duke.*;
@@ -14,6 +13,12 @@ import java.io.*;
 
 public class CountCalculator {
 
+    /**
+    * Calculates total number of births, total number of girls and boys,
+    *   given a year. 
+    * Requires file.  
+    * @prints total births, girls, boys for given year. 
+    */
     public void totalBirths(FileResource fr){
         int totalBirths = 0;
         int totalBirthsF = 0;
@@ -35,6 +40,11 @@ public class CountCalculator {
         System.out.println("Total births Boys = " + totalBirthsM);
     }
     
+    /**
+    * Calculates total number of unique names, given a year.
+    * Requires file.
+    * @return total number of unique names for given year.
+    */
        public int numberNamesTotal(FileResource fr){
         int totalNames = 0;
         String startName = "";
@@ -50,6 +60,11 @@ public class CountCalculator {
         return totalNames;
     }
     
+    /**
+    * Calculates total number of names per gender, given a year.
+    * Requires file, gender.
+    * @return total number of unique names per gender for given year.
+    */
     public int numberNamesGender(FileResource fr, String gender){
         int totalNames = 0;
         String startName = "";
@@ -63,16 +78,6 @@ public class CountCalculator {
         }
         
         return totalNames;
-    }
-    
-    public void printAllNamesOfFile(){
-        FileResource fr = new FileResource();
-        
-        for (CSVRecord record : fr.getCSVParser(false)){
-            System.out.print("Name: " + record.get(0));
-            System.out.print("Gender: " + record.get(1));
-            System.out.println("Num Born: " + record.get(2));
-        }
     }
  
 }

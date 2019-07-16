@@ -1,9 +1,12 @@
 
 /**
- * Write a description of Tester here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Tests all functions of program (automatically and manually).
+ * Depending on all other classes in application. 
+ * Assumption: datafiles should be structured as follows, first all female names, 
+ *             second all male names.
+ *
+ * @Eva
+ * @Version 2, July 2019
  */
 
 import edu.duke.*;
@@ -24,6 +27,11 @@ public class Tester {
         totalNumberOfSucceededTests = 0;
     }
     
+    /**
+    * Tests automatically all functions in program.
+    * 
+    * @return "All tests are successful!" or "[name method] FAILED".
+    */
     public void autoTest(){
         testNumberNamesGender();
         testRank();

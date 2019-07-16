@@ -6,6 +6,8 @@
  * 
  * Assumption: datafiles should be structured as follows: first all female names, 
  *             second all male names.
+ *             
+ * @return "All tests are successful!"           
  *
  * @Eva
  * @Version 2, July 2019

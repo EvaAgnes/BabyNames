@@ -3,6 +3,8 @@
  * Gets rank based on given input.
  * Requires year, name and/or gender.
  * Depending on CountCalculator. 
+ * 
+ * @return rank.
  *
  * @Eva
  * @Version 2, July 2019

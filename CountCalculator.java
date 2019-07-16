@@ -1,6 +1,7 @@
 
 /**
  * Calculates number of births, total names, and names per gender.
+ * 
  * @return number 
  * 
  * @Eva

@@ -3,6 +3,7 @@
  * This program calculates several popularity statistics based on datafiles with US babynames.
  * Tests all functions of program (automatically and manually).
  * Depending on all other classes in application. 
+ * 
  * Assumption: datafiles should be structured as follows, first all female names, 
  *             second all male names.
  *

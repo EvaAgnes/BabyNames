@@ -2,6 +2,8 @@
 /**
  * Gets name based on given input. 
  * Requires name and gender and/or year.
+ * Depending on CountCalculator and RankCalculator.
+ * 
  * @return name
  *
  * @Eva
